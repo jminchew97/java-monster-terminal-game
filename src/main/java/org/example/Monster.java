@@ -2,12 +2,27 @@ package org.example;
 
 public class Monster {
     private String name;
-    private Integer attack_power;
+    private Integer attackPower;
     private Integer health;
-    public Monster(String name, Integer attack_power, Integer health){
+
+    public Monster(String name, Integer attackPower, Integer health){
         this.name = name;
-        this.attack_power = attack_power;
+        this.attackPower = attackPower;
+        this.health = health;
     }
 
+    public String toString(){
+        return String.format("%s Attack:%d Health:%d",name, attackPower, health);
+    }
 
+    public String getName(){
+        return name;
+    }
+
+    public Integer getAttackPower(){
+        return attackPower;
+    }
+    public Integer getHealth(){
+        return health;
+    }
 }
